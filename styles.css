@@ -178,7 +178,7 @@ input::placeholder {
 #lblCartCount {
   padding: 0 5px;
   vertical-align: top;
-  margin-left: -45px;
+  margin-left: -51px;
   background: #ff9d69;
 }
 
@@ -818,6 +818,7 @@ color: #000000;
 @media screen and (max-width: 320px) {
   .newsletter-input button {
     width: 84px;
+    cursor: pointer;
   } 
 }
 

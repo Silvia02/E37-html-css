@@ -204,11 +204,40 @@ input::placeholder {
 }
 @media (min-width: 768px ){
   .header .loga .loga-input .hamburger{
-   display: none;
-  }
+    display: none;
+   }
   .header .loga {
   flex-wrap: nowrap;
    }
+
+
+}
+@media (min-width: 420px ) and (max-width: 768px){
+  /* styles for browsers larger than 480px; */
+    /* styles for mobile browsers smaller than 768px;*/
+  .header .pay {
+     display: none;
+   }
+  
+   .header .loga .loga-input .hamburger{
+    display: none;
+   }
+   .header .loga-input {
+     flex-direction: column;
+   }
+   .header .text-span {
+
+   margin-top: -87px;
+  }
+ 
+}
+
+@media (min-width: 425px ) and (max-width: 612px){
+  /* styles for browsers larger than 480px; */
+    /* styles for mobile browsers smaller than 768px;*/
+   .header .text-span {
+   margin-top: -207px;
+  }
 
 }
 
@@ -301,7 +330,7 @@ input::placeholder {
 
 @media screen and (max-width: 768px) {
   .txtover figcaption {
-    width: 50%;
+    width: auto;
     height: auto;
     font-size: 40px;
     line-height: 40px;
@@ -357,18 +386,10 @@ input::placeholder {
     rgba(0, 0, 0, 0.39) 100%
   );
 }
-@media screen and (max-width: 425px) {
-  .knapp {
-    display: none;
-  }
-}
 /* when the browser window is 768px wide or less: */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   .knapp {
-    position: absolute;
-    width: 126px;
-    height: 48px;
-    top: 160px;
+   display: none;
   }
 }
 @media screen and (width: 1024px) {
@@ -398,7 +419,7 @@ input::placeholder {
     flex: max(150px, 100%/3);
   }
   .columns .categories > figcaption {
-    top: 80px;
+    top: 33px;
   }
 }
 

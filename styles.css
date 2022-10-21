@@ -274,7 +274,9 @@ input::placeholder {
 }
 .txtover {
   position: relative;
+ 
 }
+
 .txtover img {
   display: block;
 }
@@ -301,26 +303,31 @@ input::placeholder {
   .txtover figcaption {
     width: 50%;
     height: auto;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: -40px;
   }
 }
 @media screen and (max-width: 425px) {
   .txtover figcaption {
-    width: 50%;
+    width: 66%;
     height: auto;
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 2rem;
+
   }
 }
 @media screen and (max-width: 375px) {
+  .images {
+    padding: 10px;
+  }
+  
   .txtover figcaption {
-    width: auto;
+    width: 70%;
     height: auto;
-    font-weight: 200;
-    font-size: 20px;
+    font-size: 1.5rem;
     line-height: 30px;
+    margin-top: -27px;
+    margin-left: -28px;
   }
 }
 

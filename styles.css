@@ -11,6 +11,10 @@ body {
   background: #F5F5F5;
   font-family: "IBM Plex Sans", sans-serif;
 }
+main {
+  padding-right: 40px;
+  padding-left: 40px;
+}
 
 /* ***************SECTION HEADER ****************/
 
@@ -18,7 +22,6 @@ body {
   width: 100%;
   margin-top: 7px;
   padding: 0;
-  height: 335px;
   position: relative;
 }
 .language {
@@ -50,9 +53,8 @@ body {
   flex-direction: row;
   align-items: center;
   height: auto;
-  margin-top: 46px;
+  margin-top: 47px;
   margin-left: 40px;
-  margin-bottom: 60px;
 }
 .header .loga-input {
   display: flex;
@@ -101,7 +103,7 @@ input::placeholder {
   color: #333333;
   display: flex;
   margin-left: auto;
-  margin-right: 130px;
+  margin-right: 80px;
   margin-top: -24px;
   gap: 20px;
 }
@@ -257,6 +259,7 @@ input::placeholder {
   margin-left: 40px;
   width: auto;
   flex-wrap: wrap;
+  margin-top: 17px;
 }
 @media screen and (max-width: 425px) {
   .lamps {
@@ -287,14 +290,14 @@ input::placeholder {
   gap: 40px;
   list-style: none;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 /*************** SECTION IMAGES **********************/
 .images {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
+  margin-top: 20px;
   justify-content: center;
 }
 .column {
@@ -329,6 +332,10 @@ input::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+  .images{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .txtover figcaption {
     width: auto;
     height: auto;
@@ -461,7 +468,7 @@ input::placeholder {
 
 /************** SECTION NEWS **************************/
 .news {
-  margin-top: 30px;
+  margin-top: 59px;
   display: flex;
   width: 100%;
   padding: 17px;
@@ -486,6 +493,7 @@ color: #000000;
 }
 
 .list {
+  margin-top: 30px;
   justify-content: space-between;
   flex-wrap: wrap; 
   background: rgba(0, 0, 0, 0.04);
@@ -525,7 +533,7 @@ color: #000000;
 
 /**************** SECTION PARTY****************************/
 .party {
-  margin-top: 30px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;  
 }
@@ -656,9 +664,14 @@ z-index: 2;
 .instagram{
   margin-top: 60px;
   position: relative;
-  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: grid;
   gap: 1rem;
+
+}
+.instagram-column{
+  margin-top: 29px;
 
 }
 @media (max-width: 425px) {
@@ -704,7 +717,7 @@ z-index: 2;
 }
 /***************** SECTION EXPERIENCES****************************/
 .experiences {
-  margin-top: 100px;
+  margin-top: 115px;
   flex-direction: row;
   text-align: center;
   gap: 30px;
@@ -774,7 +787,7 @@ z-index: 2;
     gap: 40px;
     list-style: none;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -793,10 +806,11 @@ z-index: 2;
   display: flex;
   flex-direction: row;
   gap: 70px;
-  margin-top: 80px;
-  padding: 30px;
+  margin-top: 59px;
+  /* padding: 30px; */
   width: 100%;
-  height: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .newsletter-text {
   flex-direction: column;
@@ -892,7 +906,7 @@ color: #000000;
   padding: 30px 30px 20px 30px;
   background: #FF9D69;
   border-top: 1px solid #e5e5e5;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .footer > * {

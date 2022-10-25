@@ -11,10 +11,6 @@ body {
   background: #F5F5F5;
   font-family: "IBM Plex Sans", sans-serif;
 }
-main {
-  padding-right: 40px;
-  padding-left: 40px;
-}
 
 /* ***************SECTION HEADER ****************/
 
@@ -299,6 +295,8 @@ input::placeholder {
   flex-wrap: wrap;
   margin-top: 20px;
   justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .column {
   display: flex;
@@ -411,7 +409,7 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 22px;
+  gap: 20px;
   margin-top: 30px;
 }
 
@@ -469,15 +467,15 @@ input::placeholder {
 /************** SECTION NEWS **************************/
 .news {
   margin-top: 59px;
-  display: flex;
-  width: 100%;
-  padding: 17px;
+  display: grid;
   position: relative;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .title {
 /* Nyheter */
-position: absolute;
+/* position: absolute; */
 width: 106px;
 height: 36px;
 left: 40px;
@@ -493,10 +491,10 @@ color: #000000;
 }
 
 .list {
+  padding: 0;
+  gap: 20px;
   margin-top: 30px;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-  background: rgba(0, 0, 0, 0.04);
+
 }
 
 .news.list .news-images > div {
@@ -504,29 +502,31 @@ color: #000000;
   margin-left: 33px;
 }
 
-.news-images img{
+ .news-images img{
   display: flex;
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.04);
-}
+ 
+} 
 
-@media only screen and (max-width: 1024px) {
-  .list .news-images {
-    flex: max(200px, 100%/2);
-    padding: 2%;
+
+/* Is the screen smaller than 600 pixels? Make it two columns. */
+@media (max-width: 904px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+   
+  }
+  .news {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 21px;
   }
 }
-@media (max-width: 425px) {
-  .list .news-images {
-    flex: max(150px, 100%/2);
-    font-size: small;
-  }
-}
-@media (max-width: 320px) {
-  .list .news-images {
-    flex: max(100px, 100%/2);
-    font-size: small;
+/* Is the screen larger than 900 pixels? Make it three columns. */
+@media (min-width: 900px) {
+  .list { grid-template-columns: repeat(4, 1fr); 
+ 
   }
 }
 
@@ -535,12 +535,14 @@ color: #000000;
 .party {
   margin-top: 60px;
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
+  padding-right: 40px;
+  padding-left: 40px;
+  gap: 10px;
 }
 
 .party-images{
   display: flex;
-  padding: 20px;
   justify-content: center;
   position: relative;
   
@@ -581,6 +583,7 @@ color: #000000;
 @media (max-width: 768px) {
   .party {
     flex-direction: column;
+    padding: 10px;
   }
 }
 @media (max-width: 425px) {
@@ -686,9 +689,10 @@ z-index: 2;
   }
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .instagram { 
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px; 
   }
 
 }
@@ -762,16 +766,22 @@ z-index: 2;
 }
 
 @media (max-width: 425px) {
+  .experiences {
+    gap: 0;
+    margin-top: 91px;
+  }
   .experiences-text{ 
-    flex-direction: column; 
+    flex-direction: column;
     width: 100%;
     height: auto;
     padding: 30px;
-    margin-top: 20px;  
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
     .experiences-title {
       font-size: 46px;
-      margin-bottom: 50px;
+      margin-bottom: 77px;
       margin-top: -50px;
     }
 }
@@ -796,6 +806,7 @@ z-index: 2;
     flex-direction: column;
     height: auto;
     gap: 20px;
+    margin-top: 100px;
   }
 }
 
@@ -811,6 +822,7 @@ z-index: 2;
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
+  position: relative;
 }
 .newsletter-text {
   flex-direction: column;
@@ -819,20 +831,23 @@ z-index: 2;
   position: relative;
   width: 100%;
   justify-content: flex-start;
+  margin-top: 40px;
 }
-.newsletter-text span {
+.newsletter span {
 font-family: 'IBM Plex Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 28px;
 line-height: 36px;
 color: #000000;
+position: absolute;
 }
 
 .newsletter-text p{
 font-family: 'IBM Plex Sans';
 font-style: normal;
 color: #000000;
+margin-top: 15px;
 }
 
 .newsletter-input {
@@ -890,7 +905,7 @@ color: #000000;
   .newsletter{
     flex-direction: column;
     height: auto;
-    margin-top: auto;
+    margin-top: 39px;
     gap: 30px;
   
   }
